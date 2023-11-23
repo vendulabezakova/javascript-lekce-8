@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>DOM a manipulace s obsahem stránky</title>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Source+Sans+Pro:400,400i,700,700i&amp;subset=latin-ext" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body> 
+
+	<h1 id="nadpis">JavaScript a DOM</h1>
+
+	<p id="paragraph">Učím se manipulovat s obsahem stránky. K tomu se používá divná a tajemná věc, které se říká DOM (Document Object Model). Pomocí ní mohu ke všem prvkům na stránce přistupovat v JavaScriptu jako k objektům a měnit jejich vlastnosti. Jako první chci zvládnout následující úkoly...</p>
+
+	<h2>Úkoly</h2>
+
+	<ul>
+		<li>Změn text v nadpisu.</li>
+		<li>JavaScriptem změnit barvu nadpisu.</li>
+		<li>Zvětšit velikost písma odstavce a/nebo ho udělat tučně nebo kurzívou.</li>
+		<li>Vyměnit obrázek kočky za psa. Koček je všude dost, nepotřebujeme tu další.</li>
+		<li>Přesunout čtvereček na jiné místo nebo ho otočit.</li>
+		<li>Vytvoř v CSS třídu s nějakými CSS vlastnostmi a zkuš ji přidat na libovolný prvek na stránce.</li>
+	</ul>
+
+	<img id="foto" src="kocka.jpg">
+
+	<div class="ctverecek">Čtvereček</div>
+
+
+	<div class="napoveda">
+		<h2>Jak to udělám?</h2>
+
+		<ul>
+			<li>V HTML přidám k elementu atribut <strong>id</strong></li>
+			<li>V JavaScriptu najdu daný HTML element pomocí <strong>document.querySelector("#id")</strong> a uložím si ho do proměnné, se kterou budu nadále pracovat</li>
+			<li>Textový obsah prvku změním pomocí <strong><em>prvek</em>.<em>textContent</em> = "nový text";</strong></li>
+			<li>HTML atributy nalezeného prvku změním pomocí <strong><em>prvek</em>.<em>attribut</em> = "hodnota";</strong></li>
+			<li>CSS vlastnosti nalezeného prvku změním pomocí <strong><em>prvek</em>.style.<em>cssVlastnost</em> = "hodnota";</strong></li>
+			<li>Vzpomenu si, jak se jmenují CSS vlastnosti pro barvu, písmo, atd. Víceslovné názvy vlastností (ty s pomlčkou) přepíšu v JavaScriptu do tzv. camelCase. Např. z <em>background-color</em> v CSS udělám <em>backgroundColor</em> v JavaScriptu.</li>
+			<li>CSS třídy můžeme na elementy přidávat pomocí <strong><em>prvek</em>.<em>classList</em>.<em>add</em>("csstrida");</strong></li>. Třídy můžeš z elementu i odebrat pomocí metody <em>remove</em> nebo přepínat třídu metodou <em>toggle</em>.
+		</ul>
+	</div>
+
+
+	<script src="script.js"></script>
+
+</body>
+</html>
